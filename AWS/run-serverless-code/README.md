@@ -5,4 +5,4 @@
 
 # Cost
 
-# Takeaways
+# Key Takeaways
