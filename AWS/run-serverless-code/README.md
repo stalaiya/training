@@ -4,7 +4,8 @@
 # Design
 ![Design GIF](design/design.gif)
 
-# Cost
+# Estimated Cost
+![alt text](image.png)
 
 # Key Takeaways
 ### Commands to create groups, policies and roles
