@@ -2,7 +2,6 @@
 
 COMMIT_MESSAGE=$1
 
-cd ~/Desktop/github/training;
 git pull;
 git add .;
 git commit -am "$COMMIT_MESSAGE" -q;
