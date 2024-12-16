@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "lambda:Get*",
+          "lambda:List*",
+          "s3:Get*",
+          "s3:List*",
+          "dynamodb:Get*",
+          "dynamodb:List*"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }

@@ -13,11 +13,16 @@ PARENT_DIR="$HOME/Desktop/github/training/AWS/$1"
 mkdir -p "$PARENT_DIR"
 
 # List of directories to create
-DIRECTORIES=("cloudFormation" "cost" "design" "input" "logs" "output" "scripts" "terraform")
+DIRECTORIES=("cloudFormation" "cost" "design" "iam" "input" "logs" "output" "scripts" "terraform")
 
 # Loop through the list and create each directory under the parent directory
 for dir in "${DIRECTORIES[@]}"; do
-  mkdir -p "$PARENT_DIR/$dir"
+  if [ "$dir" == "iam" ]; then
+    mkdir -p "$PARENT_DIR/iam/policies"
+    mkdir -p "$PARENT_DIR/iam/roles"
+  else
+    mkdir -p "$PARENT_DIR/$dir"
+  fi
 done
 
 # Initialize Terraform in the terraform directory
