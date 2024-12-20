@@ -1,0 +1,29 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Sid": "LambdaFullAccess",
+          "Effect": "Allow",
+          "Action": "lambda:*",
+          "Resource": "*"
+      },
+      {
+          "Sid": "IAM",
+          "Effect": "Allow",
+          "Action": [
+            "iam:CreateRole",
+            "iam:AttachRolePolicy",
+            "iam:GetPolicyVersion",
+            "iam:GetRole",
+            "iam:DeleteRole",
+            "iam:PassRole",
+            "iam:DetachRolePolicy",
+            "iam:DeleteRolePolicy",
+            "iam:ListAttachedRolePolicies",
+            "iam:ListInstanceProfilesForRole",
+            "iam:ListRolePolicies"
+          ],
+          "Resource": "*"
+      }
+  ]
+}
