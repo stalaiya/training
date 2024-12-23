@@ -24,7 +24,7 @@ resource "null_resource" "wait_for_iam_propagation" {
   }
 
   provisioner "local-exec" {
-    command = "sleep 10" 
+    command = "sleep 30" 
   }
 
   depends_on = [
