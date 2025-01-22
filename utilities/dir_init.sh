@@ -13,7 +13,7 @@ PARENT_DIR="$HOME/Desktop/github/training/AWS/$1"
 mkdir -p "$PARENT_DIR"
 
 # List of directories to create
-DIRECTORIES=("cloudFormation" "cost" "design" "iam" "input" "logs" "output" "scripts" "terraform")
+DIRECTORIES=("cloudFormation" "codeBuild" "codePipeline" "cost" "design" "iam" "input" "logs" "output" "scripts" "terraform")
 
 # Loop through the list and create each directory under the parent directory
 for dir in "${DIRECTORIES[@]}"; do
