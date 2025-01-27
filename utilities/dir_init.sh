@@ -32,3 +32,5 @@ if [ -d "$PARENT_DIR/terraform" ]; then
 else
   echo "Terraform directory does not exist."
 fi
+
+# Adding a comment by random user
