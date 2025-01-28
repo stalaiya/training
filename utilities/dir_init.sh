@@ -34,3 +34,5 @@ else
 fi
 
 # Adding a comment by random user
+# Adding a second comment by random user
+# Adding a third comment by random user
